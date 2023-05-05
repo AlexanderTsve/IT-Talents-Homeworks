@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script defer src="./assets/js/data.js"></script>
+    <script defer src="./assets/js/Product.js"></script>
+    <script defer src="./assets/js/Menu.js"></script>
+    <script defer src="./assets/js/Cart.js"></script>
+    <script defer src="./assets/js/Exam2.js"></script>
+    <title>Fantasia Kebab</title>
+  </head>
+  <body>
+    <header>
+      <ul class="header-menu">
+        <li class="header-item">
+          <img class="logo" src="./assets/images/logo.jpeg" />
+        </li>
+        <li class="menu header-item">
+          <a class="menu" href="#menupage">Menu</a>
+        </li>
+        <li class="cart header-item">
+          <a href="#cartpage">
+            <img class="cart" src="./assets/images/cart.jpeg" />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div id="menu-page">
+        </div>
+      </div>
+      <div id="cart-page" class="hidden">
+        No items added to cart!
+        <div>
+          <a href="#deliverypage">Link!</a>
+        </div>
+      </div>
+      <div id="delivery-page" class="hidden">
+        <form>
+          <label for="name">Name:</label><br>
+          <input required type="text" id="name"><br>
+          <label for="phone">Phone:</label><br>
+          <input required type="text" id="phone" name="lname"><br>
+          <label for="adress">Adress:</label><br>
+          <textarea required id="adress"></textarea><br>
+          <button type="submit"> Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

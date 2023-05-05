@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="../Controller/data.js"></script>
+    <script defer src="../Models/UserManager.js"></script>
+    <script defer src="../Models/Product.js"></script>
+    <script defer src="../Models/Menu.js"></script>
+    <script defer src="../Models/Cart.js"></script>
+    <script defer src="../Models/Delivery.js"></script>
+    <script defer src="../Models/Delivery manager.js"></script>
+    <script defer src="../Controller/registerController.js"></script>
+    <script defer src="../Controller/loginController.js"></script>
+    <script defer src="../Controller/Main.js"></script>
+    <title>Дюнери Фантазия</title>
+  </head>
+  <body>
+    <header>
+      <ul class="header-menu">
+        <li class="header-item logo-item">
+          <img class="logo" src="./images/logo.jpeg" />
+        </li>
+        <span class="header-item search-item">
+          <input id="search-field" type="text" placeholder="Търси.." />
+        </span>
+        <li class="menu header-item hidden" id="menu-element">
+          <a class="menu" href="#menu-page">Меню</a>
+        </li>
+        <li class="registration header-item" id="registration-login-element">
+          <a class="menu" href="#login-page">Вход</a>
+          <a class="menu" href="#registration-page">Регистрация</a>
+        </li>
+        <li class="cart header-item hidden" id="cart-icon">
+          <a href="#cart-page">
+            <img
+              data-toggle="tooltip"
+              title=""
+              class="cart"
+              src="./images/cart.jpeg"
+            />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div id="login-page">
+        <form id="loginForm">
+          <div class="container">
+            <p>Моля, попълнете формата, за да влезете в сайта.</p>
+            <br />
+            <p>Регистрирайте нов потребител на "Регистрация".</p>
+            <br />
+            <br />
+            <label for="e-mail"><b>Имейл:</b></label>
+            <input
+              type="text"
+              placeholder="Въведете Имейл"
+              id="e-mail"
+              required
+            />
+            <label for="psw"><b>Парола:</b></label>
+            <input
+              type="password"
+              placeholder="Въведете Парола"
+              id="pswLogin"
+              required
+            />
+            <button type="submit" id="btn-login">Вход</button>
+            <p id="notValidEmailPass" class="hidden">
+              Несъществуващ имейл и/или парола.
+            </p>
+          </div>
+        </form>
+      </div>
+      <div id="registration-page">
+        <form id="registerForm">
+          <div class="container">
+            <p>Моля, попълнете формата, за да създадете потребител.</p>
+            <br />
+            <p>Използвайте бутон "Вход" ако имате активен потребител.</p>
+            <br />
+            <hr />
+
+            <label for="fname"><b>Име</b></label>
+            <input type="text" placeholder="Въведете Име" id="fname" required />
+
+            <label for="email"><b>Имейл</b></label>
+            <input
+              type="text"
+              placeholder="Въведете Имейл"
+              id="email"
+              required
+            />
+
+            <label for="psw"><b>Парола</b></label>
+            <input
+              type="password"
+              placeholder="Въведете Парола"
+              id="pswReg"
+              required
+            />
+
+            <label for="psw-repeat"><b>Повторете парола</b></label>
+            <input
+              type="password"
+              placeholder="Повторете парола"
+              id="psw-repeat"
+              required
+            />
+            <hr />
+            <button type="submit" class="registerbtn">Регистрирай</button>
+            <p id="formNotFilledInError" class="hidden">
+              Моля, попълнете всички полета.
+            </p>
+            <p id="userExistsError" class="hidden">
+              Потребителят вече съществува. Моля, създайте нов или влезте със
+              стария.
+            </p>
+            <p id="passMismatchError" class="hidden">
+              Полетата "Парола" и "Повторете парола" трябва да бъдат попълнени с
+              една и съща парола.
+            </p>
+          </div>
+        </form>
+      </div>
+      <div id="menu-page"></div>
+      <div id="cart-page">
+        <div></div>
+      </div>
+      <div id="delivery-page">
+        <form class="delivery-form">
+          <label for="name">Име:</label><br />
+          <input required type="text" id="name" /><br />
+          <label for="phone">Телефон:</label><br />
+          <input required type="text" id="phone" /><br />
+          <label for="address">Адрес:</label><br />
+          <textarea required id="address"></textarea><br />
+          <button id="delivery-btn" type="submit">Финализирай</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Cursive;
+  src: url(./assets/fonts/BetterGrade-519DV.ttf);
+}
+body {
+  font-family: Cursive, serif, Helvetica, Times, Arial, sans-serif;
+}
+button {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 30px;
+  width: 50%;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.static-content {
+  text-align: center;
+}
+.main-heading {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.paragraph {
+  font-size: 30px;
+}
+.list {
+  font-size: 20px;
+}
+.client-list-heading {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.client-list {
+  margin-left: 500px;
+  margin-right: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-item-decorated {
+  text-decoration: line-through;
+}
+.removed-element {
+  display: none;
+}

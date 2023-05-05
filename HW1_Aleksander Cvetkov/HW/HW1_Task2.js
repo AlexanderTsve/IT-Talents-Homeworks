@@ -1,0 +1,14 @@
+var a = 10;
+var b = 23;
+a = 5.5;
+b = 0.25;
+var sum = a + b;
+var substr = a - b;
+var multiply = a * b;
+var modOper = a % b;
+var div = a / b;
+console.log(sum);
+console.log(substr);
+console.log(multiply);
+console.log(modOper);
+console.log(div);

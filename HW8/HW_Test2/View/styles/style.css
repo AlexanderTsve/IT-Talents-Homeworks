@@ -1,0 +1,170 @@
+header {
+  background-color: black;
+  height: 65px;
+}
+.logo,
+.cart {
+  height: 50px;
+}
+.cart,
+.logo,
+.login,
+.registration {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.header-item {
+  display: inline-block;
+  height: 20px;
+  text-decoration: underline;
+}
+.header-item a {
+  color: white;
+  cursor: pointer;
+}
+.logo-item {
+  align-self: flex-start;
+}
+
+.search a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.search a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.search a.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.search input[type="text"] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.search-item {
+  margin: 20px 30px 20px 30px;
+}
+.menu,
+.login,
+.registration {
+  padding-top: 20px;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none !important;
+  opacity: 0;
+}
+.kebap-images {
+  width: 260px;
+}
+.card {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-sizing: content-box;
+  width: 260px;
+  height: 260px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+.order-btn {
+  margin: 20px 0 0 1200px;
+}
+.order-total {
+  margin: 20px 0 0 1000px;
+  text-decoration-line: underline;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#cart-page {
+  display: grid;
+  width: 30vw;
+  margin-top: 20px;
+}
+.delivery-form {
+  margin-top: 20px;
+}
+.history-table {
+  margin-top: 30px;
+}
+
+.container {
+  padding: 16px;
+  margin-top: 20px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input {
+  margin: 10px 0 10px 0;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+#registration-page,
+#login-page {
+  display: flex;
+  justify-content: center;
+}
+#userExistsError,
+#passMismatchError,
+#formNotFilledInError,
+#notValidEmailPass {
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 10px;
+}

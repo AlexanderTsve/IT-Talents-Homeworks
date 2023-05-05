@@ -1,0 +1,13 @@
+var xa = 4;
+var ya = -5;
+xa = 0;
+ya = 0;
+xa = -10;
+ya = -6;
+if (xa === 0 && ya === 0) console.log("Point A lies on the origin.");
+else if (xa === 0 && ya !== 0) console.log("Point A lies on the x-axis.");
+else if (xa !== 0 && ya === 0) console.log("Point A lies on the y-axis.");
+else if (xa > 0 && ya > 0) console.log("Point A lies in Quadrant 1.");
+else if (xa < 0 && ya > 0) console.log("Point A lies in Quadrant 2.");
+else if (xa < 0 && ya < 0) console.log("Point A lies in Quadrant 3.");
+else console.log("Point A lies in Quadrant 4.");

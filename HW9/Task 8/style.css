@@ -1,0 +1,26 @@
+#pages {
+  display: inline-block;
+}
+
+#pages a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#pages a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr,
+td {
+  border: 1px black solid;
+}
+table {
+  text-align: center;
+  width: 40vw;
+}
+img {
+  width: 250px;
+}

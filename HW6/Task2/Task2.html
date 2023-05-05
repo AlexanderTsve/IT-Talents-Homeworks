@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./Task2.js"></script>
+    <title>Task2 - Find the fastest model</title>
+  </head>
+  <body>
+    <h1>The models to be compared</h1>
+    <form>
+      <label for="cars">Choose a model:</label>
+      <select class="options" name="cars" id="cars">
+        <option value="Volvo XC60">Volvo XC60</option>
+        <option value="Mercedes SLR McLaren">Mercedes SLR McLaren</option>
+        <option value="BMW M4 GTS">BMW M4 GTS</option>
+        <option value="A7 3.0 TDI quattro">A7 3.0 TDI quattro</option>
+      </select>
+      <br /><br />
+      <input class="btn-submit" type="submit" />
+    </form>
+    <p>
+      Click the button and it will show the top speed km per hour for each model
+      of the four car models above along with a simple comparison between them.
+    </p>
+    <p id="result">The button has not been clicked.</p>
+  </body>
+</html>

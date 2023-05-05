@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./Task6.js"></script>
+    <title>Task 6 - submit the form with correct input</title>
+  </head>
+  <body>
+    <h1>Submit the input</h1>
+    <p>
+      Fill the fields below with symbols - min 3 symbols and max 9 symbols per
+      text field.
+    </p>
+    <h3>
+      NB! If you enter an invalid input (less than 3 symbols OR more than 9
+      symbols), the program will return an error!
+    </h3>
+    <form>
+      <label for="finput">First input:</label>
+      <br />
+      <input type="text" id="finput" />
+      <br />
+      <p id="error-message-first">No input entered.</p>
+      <br />
+      <label for="sinput">Second input:</label>
+      <br />
+      <input type="text" id="sinput" />
+      <br />
+      <p id="error-message-second">No input entered.</p>
+      <br />
+      <input id="submit-btn" type="submit" />
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
